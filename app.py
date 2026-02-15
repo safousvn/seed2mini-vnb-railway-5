@@ -1,6 +1,6 @@
 import requests, time, concurrent.futures, os
 
-API_URL = "https://ark.ap-southeast.bytepluses.com/api/v3/chat/completions"
+API_URL = "https://ark.ap-southeast.bytepluses.com/api/v3/responses" 
 API_KEY = os.getenv("ARK_API_KEY")  # store your API key as env var
 
 headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
@@ -8,7 +8,7 @@ headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/js
 prompt = "Write a long, detailed story about AI evolution, 5000 words minimum."
 
 payload = {
-    "model": "seed-1-6-flash-250715",
+    "model": "seed-2-0-mini-260215",
     "messages": [{"role": "user", "content": prompt}],
     "max_tokens": 4096,
 }
