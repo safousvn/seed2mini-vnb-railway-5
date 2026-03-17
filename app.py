@@ -16,7 +16,7 @@ headers = {
 prompt = "Write a 4000-word extremely detailed technical analysis about AI infrastructure scaling, distributed systems, GPU optimization, and inference pipelines."
 
 payload = {
-    "model": "seed-2-0-mini-260215",
+    "model": "seed-2-0-lite-260228",
     "messages": [{"role": "user", "content": prompt}],
     "max_tokens": 4000,
     "temperature": 0.7
